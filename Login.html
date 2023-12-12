@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylelogin.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="images/bifimerah.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="images/bifimerah.png" />
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@200&family=Timmana&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="screen-backdrop"></div>
+      <div class="home-screen screen">
+        <div class="company-name">BifiMerah</div>
+        <div class="img" style="margin-top: -125px;">
+          <div class="backdrop"></div>
+          <img src="images/bifimerah.png" alt="" />
+        </div>
+        <div class="head-wrapper">
+            <div class="img">
+              <div class="backdrop"></div>
+                <div class="login-container">
+                  <h2>Login</h2>
+                  <form id="loginForm">
+                    <label for="role">Role:</label>
+                    <select id="role" name="role">
+                      <option value="team">Project Team</option>
+                      <option value="manager">Project Manager</option>
+                      <option value="client">Client</option>
+                    </select>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required />
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required />
+                    <button type="button" onclick="login()">Login</button>
+                  </form>
+                </div>
+            </div>
+          </div>
+        </div>
+    
+    <script src="scriptlogin.js"></script>
+  </body>
+</html>
